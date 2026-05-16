@@ -1,0 +1,12 @@
+name = "web-proxy"
+main = "src/index.js"
+compatibility_date = "2026-03-04"
+
+[observability.logs]
+enabled = false
+invocation_logs = true
+
+# 如果你需要自定义域名，取消下面的注释并填写
+routes = [
+  { pattern = "webproxy.wujiu.cc.cd/*", zone_name = "wujiu.cc.cd" }
+]
